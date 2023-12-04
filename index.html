@@ -135,6 +135,11 @@
     <!-- JavaScript  -->
     <script>
       //array of obj that builds the list
+      const date1 = new Date();
+      const date1Split = date1.toString().split(" ");
+      const day1 = date1Split[2];
+      const day1Num = parseInt(date1Split[2]);
+
       const dates = [
         {
           date: "02",
@@ -142,7 +147,7 @@
           time: "",
         },
         {
-          date: "03",
+          date: day1Num,
           text: "This is a test to show what happens to an item when it is that day.",
           time: "",
         },
